@@ -1,0 +1,128 @@
+<!-- <?
+$data = require_once('datainfo.php');
+$startData = $data['about']
+?> -->
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>Мое резюме</title>
+  <link rel="shortcut icon" src="imgs/favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="js/script.js" defer></script>
+  <script type="text/javascript">
+    // //1 задача
+    // let userName = prompt("Как Вас зовут?", "Имя");
+    // function showMessage() {
+    //   let message = 'Привет, ' + userName;
+    //   alert(message);
+    // }
+    // showMessage();
+    // //2 задача
+    // let anyKey = confirm('are you sure?')
+    // if (anyKey == true)
+    //   alert('Мы рады что ты уверен');
+    // else
+    //   alert('Жаль что не уверен');
+    // alert(anyKey);
+    //3 задача
+    let age = 18
+    switch (age) {
+      case 18:
+        alert('Вы совершеннолетний, все можно!');
+        break;
+      case 10:
+        alert('Вам надо учить уроки!');
+        break;
+      case 35:
+        alert('Ложитесь спать, завтра на работу');
+        break;
+    default:
+      alert('Мы не знаем что Вам делать');
+
+    }
+// if (age == 18) {
+//     alert('Вы совершеннолетний, все можно!');
+// } else if (age == 10) {
+//     alert('Вам надо учить уроки!');
+// } else if (age == 30) {
+//     alert('Ложитесь спать, завтра на работу');
+// } else {
+//     alert('Мы не знаем что Вам делать');
+// }
+  </script>
+
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2113.2">
+  <style type="text/css">
+  </style>
+</head>
+
+<body>
+  <button id="toggle-theme-btn"><input type="image" src="/imgs/moon.png" alt="здесь был вася"
+      id="toggle-theme-image"></button>
+
+  <div class="header">
+    <h1>Это страница моего резюме!</h1>
+    <div class="menu">
+      <ul>
+        <li><a href="#aboutme">Обо мне</a></li>
+        <li><a href="#myachivements">Мои достижения</a></li>
+        <li><a href="#mycontacts">Мои контакты</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="slides">
+    <img src="imgs/nature1.png" class="block" alt="Первая">
+    <img src="imgs/nature2.png" alt="Вторая">
+    <img src="imgs/nature3.png" alt="Последняя">
+    <img src="imgs/roceta.png" alt="Cамая последняя">
+  </div>
+  <button class=" btnSlide">Поменять картинку </button>
+  <script src="js/slides.js" class="btnRight" defer> </script>
+
+  <div class="container">
+    <div class="photo">
+      <a href="https://gb.ru" target="blank"><input type="image" src="imgs/roceta.png"></a>
+
+      <button id="toggle-theme-btn">
+        <img id="toggle-theme-image" src="imgs/roceta.png" alt="best_photo">
+      </button>
+
+    </div>
+    <div class="content">
+
+      <h2 class="titleblog" id="aboutme">Обо мне:</h2>
+      <!--           
+          <p><?=$startData['hello']?> </p>
+          <p><?=$startData['mywork']?></p>
+          <p><?=$startData['hobbies']?></p>
+          <p><?=$startData['hobbies2']?> </p>
+          <p><?=$startData['youhistory']?></p>
+         -->
+      <h2 class="titleblog" id="myachievements">Мои достижения:</h2>
+      <p>Участвовал в конференциях WordCamp Russia, пока это не стало мейнстримом</li>
+      </p>
+      <p>Со-основатель локального сообщества WordPress в своем городе, являющегося частью глобального WordPress
+        Community</p>
+      <p>Обучаю основам IT с 2021 года</p>
+      <p>Собираюсь однажды побывать на каждом матирике планеты)<br /></p>
+      <h2 class="titleblog" id="contacts">Мои контакты:</h2>
+      <p>Село Норкино, ул.Центральная 6,Респ.Башкортостан</p>
+      <p>Email:artoryfagottino@mail.ru</p>
+      <p>Tel:+79169297020</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <a class="copyright" href="https://gb.ru"> Это мой блог.Все права защищены,так то(c) </a>
+    <a class="top" href="#top">Перейти вверх страницы</a>
+  </div>
+  </div>
+</body>
+
+</html>
